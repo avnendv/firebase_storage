@@ -1,21 +1,23 @@
-import multer from 'multer';
-import { HelloWorld, UploadController } from '@/controllers';
+"use strict";
 
-import { errorHandle } from '@/middlewares';
-
-// Setting up multer as a middleware to grab photo uploads
-const upload = multer({
-  storage: multer.memoryStorage(),
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-
-const router = (app) => {
+exports["default"] = void 0;
+var _multer = _interopRequireDefault(require("multer"));
+var _controllers = require("../controllers");
+var _middlewares = require("../middlewares");
+// Setting up multer as a middleware to grab photo uploads
+var upload = (0, _multer["default"])({
+  storage: _multer["default"].memoryStorage()
+});
+var router = function router(app) {
   // say hello world
-  app.get('/', HelloWorld);
-
-  app.post('/upload', upload.single('file'), UploadController.upload);
+  app.get('/', _controllers.HelloWorld);
+  app.post('/upload', upload.single('file'), _controllers.UploadController.upload);
 
   // handle errors
-  app.use(errorHandle);
+  app.use(_middlewares.errorHandle);
 };
-
-export default router;
+var _default = exports["default"] = router;

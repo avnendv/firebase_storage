@@ -1,15 +1,20 @@
-import 'dotenv/config';
+"use strict";
 
-export const PORT = process.env.PORT || 3000;
-export const NODE_ENV = process.env.NODE_ENV || 'development';
-export const TOKEN_SECRET = process.env.TOKEN_SECRET || 'TOKEN_SECRET';
-export const UPLOAD_SECRET = process.env.UPLOAD_SECRET || 'UPLOAD_SECRET';
-export const FIREBASE_API_KEY = process.env.FIREBASE_API_KEY || '';
-export const FIREBASE_AUTH_DOMAIN = process.env.FIREBASE_AUTH_DOMAIN || '';
-export const FIREBASE_PROJECT_ID = process.env.FIREBASE_PROJECT_ID || '';
-export const FIREBASE_STORAGE_BUCKET = process.env.FIREBASE_STORAGE_BUCKET || '';
-export const FIREBASE_MESSAGING_SENDER_ID = process.env.FIREBASE_MESSAGING_SENDER_ID || '';
-export const FIREBASE_APP_ID = process.env.FIREBASE_APP_ID || '';
-export const FIREBASE_MEASUREMENT_ID = process.env.FIREBASE_MEASUREMENT_ID || '';
-export const WHITELIST_DOMAINS_URL = process.env.WHITELIST_DOMAINS_URL || '';
-export const IS_VERCEL = +process.env.IS_VERCEL || false;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.WHITELIST_DOMAINS_URL = exports.UPLOAD_SECRET = exports.TOKEN_SECRET = exports.PORT = exports.NODE_ENV = exports.IS_VERCEL = exports.FIREBASE_STORAGE_BUCKET = exports.FIREBASE_PROJECT_ID = exports.FIREBASE_MESSAGING_SENDER_ID = exports.FIREBASE_MEASUREMENT_ID = exports.FIREBASE_AUTH_DOMAIN = exports.FIREBASE_APP_ID = exports.FIREBASE_API_KEY = void 0;
+require("dotenv/config");
+var PORT = exports.PORT = process.env.PORT || 3000;
+var NODE_ENV = exports.NODE_ENV = process.env.NODE_ENV || 'development';
+var TOKEN_SECRET = exports.TOKEN_SECRET = process.env.TOKEN_SECRET || 'TOKEN_SECRET';
+var UPLOAD_SECRET = exports.UPLOAD_SECRET = process.env.UPLOAD_SECRET || 'UPLOAD_SECRET';
+var FIREBASE_API_KEY = exports.FIREBASE_API_KEY = process.env.FIREBASE_API_KEY || '';
+var FIREBASE_AUTH_DOMAIN = exports.FIREBASE_AUTH_DOMAIN = process.env.FIREBASE_AUTH_DOMAIN || '';
+var FIREBASE_PROJECT_ID = exports.FIREBASE_PROJECT_ID = process.env.FIREBASE_PROJECT_ID || '';
+var FIREBASE_STORAGE_BUCKET = exports.FIREBASE_STORAGE_BUCKET = process.env.FIREBASE_STORAGE_BUCKET || '';
+var FIREBASE_MESSAGING_SENDER_ID = exports.FIREBASE_MESSAGING_SENDER_ID = process.env.FIREBASE_MESSAGING_SENDER_ID || '';
+var FIREBASE_APP_ID = exports.FIREBASE_APP_ID = process.env.FIREBASE_APP_ID || '';
+var FIREBASE_MEASUREMENT_ID = exports.FIREBASE_MEASUREMENT_ID = process.env.FIREBASE_MEASUREMENT_ID || '';
+var WHITELIST_DOMAINS_URL = exports.WHITELIST_DOMAINS_URL = process.env.WHITELIST_DOMAINS_URL || '';
+var IS_VERCEL = exports.IS_VERCEL = +process.env.IS_VERCEL || false;
